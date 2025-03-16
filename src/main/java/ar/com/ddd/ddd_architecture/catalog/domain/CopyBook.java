@@ -21,4 +21,11 @@ public class CopyBook {
     @AttributeOverride(name="id", column = @Column(name="book_id"))
     private BookId bookId;
 
+    public CopyBook(BarCode barCode, BookId bookId) {
+        this.barCode = barCode;
+        this.bookId = bookId;
+    }
+
+    public CopyBook(){
+    }
 }
