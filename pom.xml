@@ -72,6 +72,17 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!--
+           Provides utility methods for validating various types of input, such as email addresses, URLs, credit card numbers, etc
+         -->
+        <dependency>
+            <groupId>commons-validator</groupId>
+            <artifactId>commons-validator</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <build>
