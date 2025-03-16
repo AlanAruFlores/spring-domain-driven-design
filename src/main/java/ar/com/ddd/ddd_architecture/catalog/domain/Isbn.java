@@ -10,7 +10,7 @@ import org.apache.commons.validator.routines.ISBNValidator;
 public record Isbn(String valueIsbn) {
     private static final ISBNValidator validator = new ISBNValidator();
 
-    //First method to execute
+    //First method to execute, his responsibility is to validate the ISBN.
     public Isbn{
         if(!validator.isValid(valueIsbn)){
             throw new IllegalArgumentException("Exception: isbn is not valid");
