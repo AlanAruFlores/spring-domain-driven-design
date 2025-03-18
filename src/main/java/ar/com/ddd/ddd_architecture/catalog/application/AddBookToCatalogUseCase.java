@@ -3,6 +3,7 @@ package ar.com.ddd.ddd_architecture.catalog.application;
 import ar.com.ddd.ddd_architecture.catalog.domain.Book;
 import ar.com.ddd.ddd_architecture.catalog.domain.BookRepository;
 import ar.com.ddd.ddd_architecture.catalog.domain.Isbn;
+import ar.com.ddd.ddd_architecture.common.UseCase;
 import org.antlr.v4.runtime.misc.NotNull;
 
 @UseCase

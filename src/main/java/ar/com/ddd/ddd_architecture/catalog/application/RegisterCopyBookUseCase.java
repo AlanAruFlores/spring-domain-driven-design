@@ -4,6 +4,7 @@ import ar.com.ddd.ddd_architecture.catalog.domain.BarCode;
 import ar.com.ddd.ddd_architecture.catalog.domain.BookId;
 import ar.com.ddd.ddd_architecture.catalog.domain.CopyBook;
 import ar.com.ddd.ddd_architecture.catalog.domain.CopyRepository;
+import ar.com.ddd.ddd_architecture.common.UseCase;
 import org.antlr.v4.runtime.misc.NotNull;
 
 @UseCase

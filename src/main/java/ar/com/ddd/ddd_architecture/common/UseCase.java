@@ -1,4 +1,4 @@
-package ar.com.ddd.ddd_architecture.catalog.application;
+package ar.com.ddd.ddd_architecture.common;
 
 import org.springframework.stereotype.Service;
 import org.springframework.validation.annotation.Validated;
