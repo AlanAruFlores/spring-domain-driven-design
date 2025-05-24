@@ -31,9 +31,9 @@ public class CatalogControllerImpl implements CatalogController{
     @Override
     public GenericResponse<List<BookDto>> getAllBooks(){
         log.info("Get all books");
-        List<BookDto> books = this.getAllBooksUseCase.execute().stream()
-            .map(book->Converter.convertToDto(book, BookDto.class))
-            .toList();
+        List<BookDto> books = Converter.convertToList(this.getAllBooksUseCase.execute()
+            , BookDto.class);
+    
             
         return GenericResponse.<List<BookDto>>builder()
                 .code(HttpStatus.OK.value())
@@ -46,6 +46,7 @@ public class CatalogControllerImpl implements CatalogController{
     public GenericResponse<Void> saveBook(BookDto bookDto){
         log.info("Save book");
         this.saveBookCaseUse.execute(Converter.convertToModel(bookDto, BookModel.class));
+
         return GenericResponse.<Void>builder()
                 .code(HttpStatus.CREATED.value())
                 .message("Book saved successfully")
