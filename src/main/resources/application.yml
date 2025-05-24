@@ -1,0 +1,12 @@
+spring:
+    application: 
+        name: ddd_architecture
+    datasource:
+        url: jdbc:mysql://localhost:3307/ddd_database
+        username: root
+        password: 
+        driver-class-name: com.mysql.cj.jdbc.Driver
+    jpa:
+        hibernate:
+            ddl-auto: create-drop
+        show-sql: true
