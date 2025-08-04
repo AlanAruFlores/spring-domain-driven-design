@@ -117,8 +117,3 @@ src/main/java/ar/com/ddd/ddd_architecture/
    ./mvnw spring-boot:run
    ```
 4. Acceder a la documentación de la API en: `http://localhost:8080/swagger-ui.html`
-
-## Endpoints de la API
-
-- `GET /catalog/v1` - Obtener todos los libros
-- `POST /catalog/v1/` - Añadir un nuevo libro
