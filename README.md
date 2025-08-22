@@ -98,12 +98,3 @@ src/main/java/ar/com/ddd/ddd_architecture/
 ### Capa Anti-Corrupción
 - Interfaz `BookClientProvider` e implementación `BookSearchClient`
 - Aísla la integración de servicios externos de la lógica de dominio
-
-## Stack Tecnológico
-
-- Spring Boot 3.4.3
-- Spring Data JPA
-- Base de datos MySQL
-- ModelMapper para mapeo de objetos
-- Jackson para procesamiento JSON
-- Swagger/OpenAPI para documentación de API
